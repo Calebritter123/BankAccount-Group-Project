@@ -12,8 +12,17 @@ using namespace std;
 void dispatch(int, Savings&, Checking&);
 int main()
 {
+	int startNums;
 	Savings savings; // A Savings object
 	Checking checking; // A Checking object;
+
+	cout << "Please enter your starting balance: " << endl;
+	cin >> startNums;
+
+	savings.setBalance(startNums);
+	checking.setBalance(startNums);
+	savings.setAnnualRate(10);
+	checking.setAnnualRate(10);
 
 	int choice; // To hold the user's menu choice
 	do     // menu

@@ -29,3 +29,12 @@ double Bank::monthlyProc() {
 	cout << "Your end of month balance is: " << balance << "\n";
 	return balance;
 }
+
+void Bank::setBalance(double bal) {
+	balance = bal;
+}
+
+
+void Bank::setAnnualRate(double rate) {
+	annualInterestRate = rate;
+}

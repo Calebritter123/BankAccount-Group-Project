@@ -142,7 +142,7 @@
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Checking.cpp" />
     <ClCompile Include="Savings.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Checking.h" />

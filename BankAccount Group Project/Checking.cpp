@@ -13,8 +13,17 @@ double Checking::withdraw(double amount) {
 	}
 }
 
+void Checking::setAnnualRate(double rate) {
+	Bank::setAnnualRate(rate);
+}
+
 double Checking::monthlyProc() {
 	balance = balance - (5 + (.1 * numWithdrawals));
 	cout << "Checking: ";
 	return Bank::monthlyProc();
 }
+
+void Checking::setBalance(double bal) {
+	balance = bal;
+}
+
