@@ -21,8 +21,8 @@ void Bank::calcInt() {
 }
 
 double Bank::monthlyProc() {
-	calcInt();
 	balance = balance - monthlyServiceCharge;
+	calcInt();
 	numDeposits = 0;
 	numWithdrawals = 0;
 	monthlyServiceCharge = 0;
@@ -37,4 +37,8 @@ void Bank::setBalance(double bal) {
 
 void Bank::setAnnualRate(double rate) {
 	annualInterestRate = rate;
+}
+
+double Bank::getBalance() {			//New function implement into children classes.
+	return balance;
 }

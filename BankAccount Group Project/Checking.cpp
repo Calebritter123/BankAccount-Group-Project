@@ -5,7 +5,7 @@ double Checking::deposit(double amount) {
 }
 
 double Checking::withdraw(double amount) {
-	if (balance - amount < 0) {
+	if (getBalance() - amount < 0) {
 		return Bank::withdraw(amount) - 15;
 	}
 	else {
@@ -18,12 +18,16 @@ void Checking::setAnnualRate(double rate) {
 }
 
 double Checking::monthlyProc() {
-	balance = balance - (5 + (.1 * numWithdrawals));
+	setBalance(getBalance() - (5 * (.1 * numWithdrawals)));   
 	cout << "Checking: ";
 	return Bank::monthlyProc();
 }
 
 void Checking::setBalance(double bal) {
-	balance = bal;
+	Bank::setBalance(bal);
+}
+
+double Checking::getBalance() {
+	return Bank::getBalance();
 }
 

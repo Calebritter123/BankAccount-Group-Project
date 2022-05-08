@@ -21,8 +21,8 @@ int main()
 
 	savings.setBalance(startNums);
 	checking.setBalance(startNums);
-	savings.setAnnualRate(10);
-	checking.setAnnualRate(10);
+	savings.setAnnualRate(.01);
+	checking.setAnnualRate(.01);
 
 	int choice; // To hold the user's menu choice
 	do     // menu

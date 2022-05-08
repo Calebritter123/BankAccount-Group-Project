@@ -10,6 +10,7 @@ private:
 	double annualInterestRate;
 	double monthlyServiceCharge = 10.0;
 public: 
+	double getBalance();
 	void setBalance(double bal);
 	void setAnnualRate(double rate);
 	double deposit(double amount);

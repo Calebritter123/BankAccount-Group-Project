@@ -30,13 +30,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Savings.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Checking.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Account.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
